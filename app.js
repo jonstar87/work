@@ -3,6 +3,11 @@ const path = require('path');
 
 const app = express();
 
+
+// Hacemos fija la ruta de public
+const publicPath = path.resolve(__dirname, './public');
+app.use (express.static(publicPath));
+
 app.listen(3030,() => console.log('Conexión exitosa para INNOVAMOTION'));
 
 app.get('/home', function (req, res) { 
