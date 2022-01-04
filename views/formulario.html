@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
+<header class="nav-bar">
+        
+    <img src="https://innova-motion.com/wp-content/uploads/2021/05/logo_sm.png" alt="Logo de la empresa">
+   
+    <ul class="enlaces">
+        <li><a href="#">Inicio |</a></li>
+        <li><a href="#">La firma |</a></li>
+        <li><a href="#">Servicios |</a></li>
+        <li><a href="#">Blog |</a></li>
+        <li><a href="#">Contacto |</a></li>
+    </ul>
+
+</header>
+<section class="formulario">
+
+   
+<form action="resultado.html" method="POST">
+    <!-- escribí tu código aquí -->
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" name="telefono" id="telefono"required>
+    <label for="genero">Género: </label>
+         <label>Femenino</label>
+    <input type="radio" name="genero" id="genero" value="Femenino">
+         <label>Masculino</label>
+    <input type="radio" name="genero" id="genero" value="Masculino">
+
+    <input type="submit" value="Enviar"></input>
+
+    <label>¿Figura de PI?</label>
+        <label>Patente</label>
+        <input type="checkbox" name="figuraPI" value="Patente">
+        <label>Marca</label>
+        <input type="checkbox" name="figuraPI" value="Marca ">
+        <label>Diseño Industrial</label>
+        <input type="checkbox" name="figuraPI" value="Diseño Industrial">
+        <label>Fecha de cumpleaños</label>
+        <input type="date" name="fecha">    
+    <label for="color"> Elige tu color favorito</label>
+        <select name="color" id="color">
+            <option value="1">Rojo</option>
+            <option value="2">Verde</option>
+            <option value="3">Amarillo</option>
+        </select>
+        <textarea name="comentario" id="comentario">Escribe aqui tu comentario</textarea>
+        <button type="reset">Cancelar</button>
+      <button type="submit">Enviar</button>
+   
+
+</form>
+
+</section>    
+</body>
+</html>

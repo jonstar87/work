@@ -8,7 +8,7 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 app.use (express.static(publicPath));
 
-app.listen(3030,() => console.log('Conexión exitosa para INNOVAMOTION'));
+app.listen(3030,() => console.log('Conexión exitosa para INNOVAMOTION en puerto 3030'));
 
 app.get('/home', function (req, res) { 
     //res.send ('Bienvenidos al sitio 3030');
@@ -40,4 +40,8 @@ app.get('/regulatory-affairs', function (req, res) {
 });
 app.get('/utility-models', function (req, res) { 
     res.sendFile(path.join(__dirname, './views/umodels.html'));
+});
+
+app.get('/formulario', function (req, res) { 
+    res.sendFile(path.join(__dirname, './views/formulario.html'));
 });
