@@ -1,0 +1,60 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Source Sans Pro',  sans-serif;
+}
+
+h1 {
+
+    text-align: center;
+    color: blue;
+
+}
+
+h2{
+    color: cadetblue;
+}
+
+header {
+  position: fixed;
+  background-color: blue;
+  width: 100%;
+  top: 0px;
+  
+}
+
+
+.nav-bar {
+    display:flex;
+     justify-content: space-around;
+     width: 100%;
+     padding-left: 10vw;
+     padding-right: 10vw;
+     padding-top: 1vw;
+     padding-bottom: 1vw;
+  }
+
+.enlaces {
+    display:flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    color: black;
+    
+  }
+
+  .space-nav{
+  
+    padding-top: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .formulario { 
+    display:flex;
+    align-self: center;
+
+  }

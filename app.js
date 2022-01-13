@@ -14,6 +14,10 @@ app.get('/home', function (req, res) {
     //res.send ('Bienvenidos al sitio 3030');
     res.sendFile(path.join(__dirname, './views/index.html'));
 });
+app.get('/new', function (req, res) { 
+    //res.send ('Bienvenidos al sitio 3030');
+    res.sendFile(path.join(__dirname, './views/index2.html'));
+});
 
 app.get('/academy', function (req, res) { 
     res.sendFile(path.join(__dirname, './views/academy.html'));
