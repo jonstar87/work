@@ -1,47 +1,40 @@
 const express = require ('express');
+const app = express();
 const path = require('path');
 
-const app = express();
+//Archivos estáticos
 
+app.use (express.static(path.join(__dirname, 'public')));
 
-// Hacemos fija la ruta de public
-const publicPath = path.resolve(__dirname, './public');
-app.use (express.static(publicPath));
+// Vista ejs
 
-app.listen(3030,() => console.log('Conexión exitosa para INNOVAMOTION en puerto 3030'));
+app.set ('view engine', 'ejs');
 
-app.get('/home', function (req, res) { 
-    //res.send ('Bienvenidos al sitio 3030');
-    res.sendFile(path.join(__dirname, './views/index.html'));
-});
+// Configuración para trabajar con POST
 
-app.get('/academy', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/academy.html'));
-});
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.get('/blog', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/blog.html'));
-});
+//config method override PUT & DELETE
 
-app.get('/trademarks', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/trademarks.html'));
-});
-app.get('/industrial-designs', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/designs.html'));
-});
-app.get('/fredoom-to-operate-search', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/fto.html'));
-});
-app.get('/patents', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/patents.html'));
-});
-app.get('/regulatory-affairs', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/regulatory.html'));
-});
-app.get('/utility-models', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/umodels.html'));
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
+//rutas permitidas
+
+const rutasMain = require ('./routers/main.js');
+const rutasUser = require('./routers/users.js')
+
+app.use('/', rutasMain); 
+app.use('/', rutasUser);
+
+// 404
+
+app.use ((req, res, next) => {
+    // res.status(404).render('index');
+    res.status(404).render('404');
 });
 
-app.get('/formulario', function (req, res) { 
-    res.sendFile(path.join(__dirname, './views/formulario.html'));
-});
+// Levantar servidor
+
+app.listen(3000,() => console.log('Conexión exitosa para INNOVAMOTION PORT 3000'));

@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/styles.css" rel="stylesheet">
 
-    <title>Document</title>
-</head>
+    <%- include ('./partials/head')%>
+
 <body>
     
-<header class="nav-bar">
-        
-    <img src="https://innova-motion.com/wp-content/uploads/2021/05/logo_sm.png" alt="Logo de la empresa">
-   
-    <ul class="enlaces">
-        <li><a href="#">Inicio |</a></li>
-        <li><a href="#">La firma |</a></li>
-        <li><a href="#">Servicios |</a></li>
-        <li><a href="#">Blog |</a></li>
-        <li><a href="#">Contacto |</a></li>
-    </ul>
+    <%- include ('./partials/header.ejs')%>
 
-</header>
-<section class="formulario">
+
+<section class="space-nav">
 
    
 <form action="resultado.html" method="POST">
@@ -66,5 +51,7 @@
 </form>
 
 </section>    
+
+<%- include ('./partials/footer.ejs')%>    
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('./partials/head')%>
+
+<body>
+    <%- include ('./partials/header.ejs')%>
+
+<section class="register">
+
+<form action="/users/register" method="post">
+
+<label for="">Nombre</label>
+<input type="text" name="nombre" required>
+<br>
+
+<label for="">Apellido</label>
+<input type="text" name="apellido" required>
+<br>
+<label for="">Edad</label>
+<input type="text" name="edad" required>
+<br>
+<label for="">Email</label>
+<input type="email" name="email" required>
+<br>
+<input type="submit" name="Registrar">
+
+
+</form>
+
+</section>
+
+
+
+    <%- include ('./partials/footer.ejs')%>   
+</body>
+</html>
