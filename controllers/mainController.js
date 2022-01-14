@@ -8,10 +8,9 @@ let mainController = {
         res.render('academy');
         },
     new: (req, res) => {
-        res.render('index2');
+            res.render('index2');
             }
 
-  
 };
 
 module.exports = mainController;
