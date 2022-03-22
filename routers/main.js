@@ -8,8 +8,15 @@ const mainController = require ('../controllers/mainController');
 // Rutas que se establecen por main 
 
 router.get('/home', mainController.home);
-router.get('/academy', mainController.academy);
-router.get('/new', mainController.new);
+router.get('/patentes', mainController.patentes);
+router.get('/marcas', mainController.marcas);
+router.get('/modelos', mainController.modelos);
+router.get('/designs_es', mainController.designs_es);
+router.get('/autor', mainController.autor);
+router.get('/regulatorios', mainController.regulatorios);
+router.get('/academia', mainController.academia);
+router.get('/blog', mainController.blog);
+router.get('/consulta', mainController.consulta);
 
 
 

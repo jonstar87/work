@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 
 <%- include ('./partials/head')%>
 
 <body>
-    <%- include ('./partials/header.ejs')%>
+
+
+    <!-- Aquí puedes escribir tu comentario 
+    navbar
+      <%- include ('./partials/header.ejs')%>
+    -->
+  
 
     <div class="space-nav">
+<!-- Aquí puedes escribir tu comentario 
+
+ <section>
+            <br> <br> <br> 
+        </section>
+
+-->
+
+
+       
         <section id="home">
 
             <div class="portada">
+                <br> 
+                <h1> Expertos en gestión de patentes, marcas y diseños industriales.</h1> <br>
                 <h2>Brindamos certeza jurídica a tu creatividad tanto en México como en el extranjero.</h2>
-    
+                <br> <br>
                 <form type="button"> ¡Contáctanos!</form>
-            
+                <br>
             </div>
         
 
@@ -23,68 +41,184 @@
 
     
         <section id="about">
-        
-            <h2>Acerca de nuestra firma</h2>
+
+<div>
+    <h2>Acerca de nuestra firma</h2>
+</div>
+
+        <div class="contenido">
             
-            <p>¡Motivados por el fomento a la innovación!</p>
+          
+            <article class="in-contenido-about">
+                <p>¡Motivados por el fomento a la innovación!</p>
 
-            <p>La firma se enfoca principalmente en proveer soluciones integrales en la gestión de Propiedad Intelectual, como resultado de la generación de nuevos conocimientos y desarrollos tecnológicos suceptibles de impactar positivamente el mundo en el que vivimos.
-            </p>
+                <p>La firma se enfoca principalmente en proveer soluciones integrales en la gestión de Propiedad Intelectual, como resultado de la generación de nuevos conocimientos y desarrollos tecnológicos suceptibles de impactar positivamente el mundo en el que vivimos.
+                </p>
+    
+    
+                <p>Gracias a la experiencia adquirida desde 2012 como Examinadores de Patente y Abogados dentro del Instituto Mexicano de la Propiedad Industrial (IMPI), que junto con nuestros procedimientos estandarizados y gran dinamismo, nos permiten brindar un servicio de gran calidad, acorde con las necesidades de todos nuestros clientes.
+                </p>
+                <a href="">Continuar leyendo...</a>
 
-
-            <p>Gracias a la experiencia adquirida desde 2012 como Examinadores de Patente y Abogados dentro del Instituto Mexicano de la Propiedad Industrial (IMPI), que junto con nuestros procedimientos estandarizados y gran dinamismo, nos permiten brindar un servicio de gran calidad, acorde con las necesidades de todos nuestros clientes.
-
-            </p>
-
+            </article>
+            
+            
+        </div>
+        
 
             
         </section>
 
+       
         <section id="services">
         
-            <h2>Nuestros servicios
-            </h2>
-            
-            <p>Patentes</p>
-            <p>Marcas</p>
-            <p>Modelos de Utilidad</p>
-            <p>Diseños Indsutriales</p>
-            <p>Asuntos Regulatorios</p>
-            <p>Academia</p>
+            <div>
+                <h2>Nuestros servicios
+                </h2>
+            </div>
 
+            <div class="contenido">
+
+               
+
+                <article class="in-contenido-services">
+                    <h3 >Patentes</h3>
+
+                    <p>Nuestro equipo analiza la factibilidad para la protección de 
+                        invenciones aplicando metodologías reconocidas a nivel internacional 
+                        por la Organización Mundial de la Propiedad Intelectual (OMPI).
+
+                        <p>
+                            <a href="http://localhost:3000/patentes" class="_blank" >Continuar leyendo...</a>
+
+                        </p>
+
+                </article>
+                
+                <article class="in-contenido-services">
+                    <h3>Marcas</h3>
+                  <p>Si usted es un emprendedor y tiene el logotipo de su empresa o el logotipo de un nuevo producto o servicio, y está interesado en la adquisición de protección, podemos ayudarlo ya que somos expertos en el análisis de la posibilidad de registro de marcas comerciales, su licencia, declaración famosa y defensa en México e incluso en el extranjero.
+
+                </p>
+                <a href="http://localhost:3000/marcas" class="_blank">Continuar leyendo...</a>
+                </article>
+
+                <article class="in-contenido-services">
+                    <h3>Modelos de Utilidad</h3>
+                  <p>
+                    Si su invención no cumple con la evaluación para ser patentable, podemos ayudarlo con la presentación y defensa de su invento mediante solicitud de modelo de utilidad. Principalmente en México, pero si lo desea, también contamos con excelentes socios en el extranjero para extender su protección donde quiera que esté interesado en establecer relaciones comerciales.
+
+
+                  </p>
+                <a href="http://localhost:3000/modelos" class="_blank">Continuar leyendo...</a>
+                </article>
+                <article class="in-contenido-services">
+                    <h3>Diseños Industriales</h3>
+                  <p>Nuestro equipo tiene especialistas para ayudarlo con el análisis de factibilidad de protección y defensa en México, e inclusive al rededor del mundo para dibujos y modelos con aplicación industrial, de características esencialmente ornamentales y novedosas.
+
+                </p>
+                <a href="http://localhost:3000/designs_es" class="_blank">Continuar leyendo...</a>
+                </article>
+              
+                <article class="in-contenido-services">
+                    <h3>Asuntos Regulatorios</h3>
+                  <p>Si está interesado en vender su producto o servicio en el mercado mexicano, podemos ayudarlo ya que tenemos amplia experiencia en la gestión del registro sanitario de medicamentos, hemoderivados, vacunas y dispositivos médicos ante COFEPRIS. Puesto que, al tener conocimiento pleno sobre la regulación sanitaria y la ley de la propiedad industrial podemos brindarle asesorías muy puntuales.
+
+                </p>
+                <a href="http://localhost:3000/regulatorios" class="_blank">Continuar leyendo...</a>
+                </article>
+                
+                <article class="in-contenido-services">
+                    <h3>Academia</h3>
+                  
+                <a href="http://localhost:3000/academia" class="_blank">Continuar leyendo...</a>
+                </article>
+             
+            </div>
         </section> 
         
         
         <section id="international">
-        
+        <div>
             <h2>A nivel nacional e internacional</h2>
-            <p>Somos conscientes de que la Propiedad Intelectual es un aspecto fundamental para detonar la magia de la innovación. Es por ello que, además de la consultoría estamos enfocados en la impartición de cursos y talleres formativos para concientizar a todos los actores involucrados tales como: emprendedores, inventores independientes, creativos y científicos.</p>
+
+        </div>
 
 
-            <p>Reconocida como la mejor empresa joven de gestión de Propiedad Intelectual del 2019
-            </p>
+            <div class="contenido-izquierdo">
+
+<article class="in-contenido-international">
+
+    <p>Somos conscientes de que la Propiedad Intelectual es un aspecto fundamental para detonar la magia de la innovación. Es por ello que, además de la consultoría estamos enfocados en la impartición de cursos y talleres formativos para concientizar a todos los actores involucrados tales como: emprendedores, inventores independientes, creativos y científicos.</p>
+    
+    
+    <p>Reconocida como la mejor empresa joven de gestión de Propiedad Intelectual del 2019.
+    </p>
+
+</article>
+
+<article class="in-contenido-international" id="logo-internacional">
+
+</article>
+
+
+                
+            </div>
+          
            
 
         </section>
 
         <section id="blog">
-        
-            <h2>Revisa los artículos de nuestro blog</h2>
-            
-            <p>Procedimiento de registro de marca ante el IMPI </p>
 
-            <p>Solicitar una patente en México, más allá de la protección de tu inversión.</p>
-            <p> Errores frecuentes al solicitar una patente en México.</p>
+            <div>
+                <h2>Revisa los artículos de nuestro blog</h2>
+
+            </div>
+            <div class="contenido">
+            
+                <article class="in-contenido-blog">
+                    <p>Procedimiento de registro de marca ante el IMPI </p>
+                    <a href="http://localhost:3000/blog" class="_blank">Continuar leyendo...</a>
+                </article>
+
+                <article class="in-contenido-blog">
+                    <p>Solicitar una patente en México, más allá de la protección de tu inversión.</p>
+                    <a href="http://localhost:3000/blog" class="_blank">Continuar leyendo...</a>
+                </article>
+
+                <article class="in-contenido-blog">
+                    <p> Errores frecuentes al solicitar una patente en México.</p>
+                    <a href="http://localhost:3000/blog" class="_blank">Continuar leyendo...</a>
+                </article>
+               
+                
+             
+            
+            </div>
+           
 
         </section>
 
         <section id="contact">
-        
-            <h2>Llena el formulario para que uno de nuestros agentes te contacte</h2>
+
+            <div>
+                <h2>Llena el formulario para que uno de nuestros agentes te contacte</h2>
+
+            </div>
+
+            <div class="contenido">
+
+            <article class="in-contenido-contact">
+
+                <p>Nombre</p>
+                <p>Email </p>
+                <p>Consulta</p>
             
-            <p>Nombre</p>
-            <p>Email </p>
-            <p>Consulta</p>
+            </article>
+                
+            </div>
+           
 
         </section>
 

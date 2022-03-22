@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <%- include ('./partials/head')%>
 
 <body>
-    <%- include ('./partials/header.ejs')%>
+<h2>Únete al movimiento de la innovación</h2>
 
 <section class="register">
+    <form action="/users/register" method="post">
+    <label for="">Nombre</label>
+    <input type="text" name="nombre" required>
+    <br>
+    <label for="">Email</label>
+    <input type="email" name="email" required>
+    <br>
+    <label for="">Contraseña</label>
+    <input type="password" name="password1" required>
+    <br>
+    <label for="">Repita su contraseña</label>
+    <input type="password" name="password2" required>
+    <br>
+    <label for=""> <input type="checkbox" name="terminos" required> Acepto los términos y condiciones de Innovamotion Agency.</label>
+   
+    <br>
+    
+    <input type="submit" name="Registrar">
+        <br>
 
-<form action="/users/register" method="post">
+    <p>Ya tienes una cuenta?</p>
+    <br>
+    <a href="http://localhost:3000/login" class="_blank">Inicia sesión aquí</a>
+    
 
-<label for="">Nombre</label>
-<input type="text" name="nombre" required>
-<br>
-
-<label for="">Apellido</label>
-<input type="text" name="apellido" required>
-<br>
-<label for="">Edad</label>
-<input type="text" name="edad" required>
-<br>
-<label for="">Email</label>
-<input type="email" name="email" required>
-<br>
-<input type="submit" name="Registrar">
-
-
-</form>
-
+    </form>
+    
 </section>
 
 
-
-    <%- include ('./partials/footer.ejs')%>   
 </body>
 </html>

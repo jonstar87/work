@@ -10,12 +10,19 @@ body {
 
 header {
   position: fixed;
-  background-color: blue;
+  background-color: rgb(87, 87, 226);
   width: 100%;
   top: 0px;
   
 }
 
+a{
+  color: blue;
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
 
 .nav-bar {
     display:flex;
@@ -25,26 +32,162 @@ header {
      padding-right: 10vw;
      padding-top: 1vw;
      padding-bottom: 1vw;
+     color: aliceblue;
   }
 
 .enlaces {
     display:flex;
     justify-content: space-around;
     flex-grow: 1;
-    color: white
-    
+    color: aliceblue;
   }
 
   .space-nav{
   
-    padding-top: 150px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
+  }
+
+  #home{
+    background-image: url(../img/fondo1.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+  }
+
+
+  .portada{
+    text-align: right;
+    padding-top: 5rem;
+    padding-right: 3rem;
+    padding-left: 45rem;
+  }
+
+  .contenido{
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+
+  }
+  .register{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .consulta{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.login{
+    padding-left: 1rem;
+    padding-top: 5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contenido-izquierdo{
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+#about{
+  background-color: rgb(98, 101, 248);
+}
+  .in-contenido-about{
+
+    min-width: 30%;
+    max-width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  .in-contenido-services{
+    border: 1px solid;
+    border-color: rgb(66, 66, 121);
+    min-width: 30%;
+    max-width: 31%;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  #international{
+background-color: aqua;
+  }
+
+  .in-contenido-international{
+
+    min-width: 30%;
+    max-width: 45%;
+    padding: 2rem;
+    margin: 1rem;
+   
+
+  }
+
+  #logo-internacional{
+    background-image: url(../img/legalaw.png);
+    background-position: center center;
+    background-attachment:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+  width: 430px;
+  height: 608px;
+
+  }
+ 
+
+  .in-contenido-blog{
+    border: 1px solid;
+    border-color: rgb(66, 66, 121);
+    min-width: 30%;
+    max-width: 31%;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  .in-contenido-contact{
+
+    border: 1px solid;
+    border-color: rgb(66, 66, 121);
+    min-width: 30%;
+    max-width: 31%;
+    padding: 1rem;
+    margin: 1rem;
+
   }
   .formulario { 
     display:flex;
     align-self: center;
+   
 
   }
 
@@ -58,14 +201,126 @@ header {
     text-align: center;
   }
 
-  #home{
-    background-image: url(../img/fondo1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  #footer{
+    border: 1px solid;
+    border-color: rgb(194, 194, 209);
+    background-color: rgb(247, 242, 236);
   }
 
-  .portada{
+  .in-contenido-footer{
 
-    background-position: right;
+  
+    min-width: 30%;
+    max-width: 31%;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  #logo-footer{
+    background-image: url(../img/perfil.jpg);
+    background-position: center center;
+    background-attachment:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+  }
+  section{
+    width: 100%;
+    min-height: 800px;
+  }
+
+
+  h1{
+    font-size: 3rem;
+    color: gold;
+  }
+
+  h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+    color: rgb(38, 150, 170);
+  }
+  .portada h2{
+    font-size: 2.2rem;
+    text-align: right;
+    color: rgb(71, 197, 219);
+  }
+  h3{
+    font-size: 1.6rem;
+    color: rgb(175, 102, 33);
+  }
+  p{
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+ 
+
+
+  
+
+
+  @media(max-width: 1200px){
+    html{
+      font-size: 14px;
+    }
+ 
+    .portada{
+      text-align: right;
+      padding-top: 5rem;
+      padding-right: 3rem;
+      padding-left: 38rem;
+    }
+ 
+ 
+    section{
+     width: 100%;
+     min-height: 650px;
+   }
+
+
+
+  @media(max-width: 770px){
+   html{
+     font-size: 12px;
+   }
+
+   .portada{
+    text-align: right;
+    padding-top: 5rem;
+    padding-right: 3rem;
+    padding-left: 20rem;
+    padding-bottom: 2rem;
+  }
+
+
+   section{
+    width: 100%;
+    min-height: 500px;
+  }
+
+  }
+
+  @media(max-width: 480px){
+   
+    html{
+      font-size: 10px;
+    }
+
+
+    .portada{
+      text-align: right;
+      padding-top: 2rem;
+      padding-right: 3rem;
+      padding-left: 10rem;
+      padding-bottom: 2rem;
+    }
+    section{
+      width: 100%;
+      min-height: 450px;
+    }
   }

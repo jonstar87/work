@@ -1,57 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <%- include ('./partials/head')%>
 
 <body>
+<h2>Que gusto verte</h2>
     
-    <%- include ('./partials/header.ejs')%>
+
+<section class="login">   
 
 
-<section class="space-nav">
-
-   
-<form action="resultado.html" method="POST">
-    <!-- escribí tu código aquí -->
-
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" id="nombre" required>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required>
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" name="telefono" id="telefono"required>
-    <label for="genero">Género: </label>
-         <label>Femenino</label>
-    <input type="radio" name="genero" id="genero" value="Femenino">
-         <label>Masculino</label>
-    <input type="radio" name="genero" id="genero" value="Masculino">
-
-    <input type="submit" value="Enviar"></input>
-
-    <label>¿Figura de PI?</label>
-        <label>Patente</label>
-        <input type="checkbox" name="figuraPI" value="Patente">
-        <label>Marca</label>
-        <input type="checkbox" name="figuraPI" value="Marca ">
-        <label>Diseño Industrial</label>
-        <input type="checkbox" name="figuraPI" value="Diseño Industrial">
-        <label>Fecha de cumpleaños</label>
-        <input type="date" name="fecha">    
-    <label for="color"> Elige tu color favorito</label>
-        <select name="color" id="color">
-            <option value="1">Rojo</option>
-            <option value="2">Verde</option>
-            <option value="3">Amarillo</option>
-        </select>
-        <textarea name="comentario" id="comentario">Escribe aqui tu comentario</textarea>
-        <button type="reset">Cancelar</button>
-      <button type="submit">Enviar</button>
-   
-
-</form>
-
+    <form action="resultado.html" method="POST">
+        
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="nombre">Contraseña</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="Enviar"></input>
+        <br>
+        <p>No tienes una cuenta?</p>
+        
+          <a href="http://localhost:3000/register" class="_blank">Registrate aquí</a>
+        <br>   <br>   <br>
+        <a href="">Olvide mi contraseña</a>
+    </form>
 </section>    
-
-<%- include ('./partials/footer.ejs')%>    
+ 
 </body>
 </html>
