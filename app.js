@@ -31,7 +31,7 @@ app.use('/', rutasUser);
 // 404
 
 app.use ((req, res, next) => {
-    // res.status(404).render('index');
+    // res.status(404).render('index'); alternativo
     res.status(404).render('404');
 });
 
