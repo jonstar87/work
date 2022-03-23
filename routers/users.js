@@ -9,6 +9,9 @@ const logDBMiddleware = require('../middlewares/logDBMiddleware');
 router.get('/register', userController.register);
 router.post('/register', logDBMiddleware, userController.nuevo);
 
+router.get('/registro', userController.registro);
+router.post('/registro', userController.registroNuevo);
+
 router.get('/login', userController.login);
 router.get('/list', userController.list);
 router.get('/search', userController.search); 

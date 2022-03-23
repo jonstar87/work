@@ -1,3 +1,4 @@
+const res = require("express/lib/response");
 
 let userController = {
   
@@ -5,11 +6,23 @@ let userController = {
         res.render('register');
         },
 
+        registro: (req, res) =>{
+            res.render('registro');
+        },
+
+        registroNuevo: (req, res) =>{
+            //res.render('registro');
+
+            //let newUser = req.body;
+            //console.log (newUser);
+            res.send(req.body);
+//            res.redirect('/home');
+        },
+
     nuevo: (req, res) => {
        // res.render('login');
-        res.send('Hola');     
+       res.send(req.body);
 
-        res.redirect('index');
 
         },
     login: (req, res) => {
@@ -21,6 +34,7 @@ let userController = {
     search: (req, res) => {
       res.render('search');
         }, 
+
     edit: (req, res) => {
         let idUser = req.params.idUser;
         let users = [

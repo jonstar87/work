@@ -3,20 +3,16 @@ const app = express();
 const path = require('path');
 
 //Archivos estáticos
-
 app.use (express.static(path.join(__dirname, 'public')));
 
 // Vista ejs
-
 app.set ('view engine', 'ejs');
 
 // para trabajar con post
-
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //config method override PUT & DELETE
-
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
@@ -34,11 +30,7 @@ app.use('/', rutasUser);
 
 // 404
 
-app.use ((req, res, next) => {
-    // res.status(404).render('index'); alternativo
-    res.status(404).render('404');
-    next();
-});
+//app.use ((req, res, next) => {res.status(404).render('404');next();});
 
 // Levantar servidor
 
