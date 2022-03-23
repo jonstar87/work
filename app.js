@@ -23,16 +23,21 @@ app.use(methodOverride('_method'));
 //rutas permitidas
 
 const rutasMain = require ('./routers/main.js');
-const rutasUser = require('./routers/users.js')
+const rutasUser = require('./routers/users.js');
 
+const logMiddleware = require('./middlewares/logMiddleware');
+//const logBDMiddleware = require('./middlewares/logBDMiddleware');
+app.use(logMiddleware);
 app.use('/', rutasMain); 
 app.use('/', rutasUser);
+
 
 // 404
 
 app.use ((req, res, next) => {
     // res.status(404).render('index'); alternativo
     res.status(404).render('404');
+    next();
 });
 
 // Levantar servidor
