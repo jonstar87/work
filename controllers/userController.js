@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const res = require("express/lib/response");
 
 let userController = {
@@ -53,7 +54,24 @@ let userController = {
         },
     delete: (req, res) => {
             res.render('delete');
-            }  
+            },
+            
+    session: (req, res) => {
+
+        if (req.session.numeroVisitas == undefined){
+            req.session.numeroVisitas = 0;
+        }
+        req.session.numeroVisitas++;
+        res.send('Session tiene el número: ' + req.session.numeroVisitas);
+        },
+        processlogin: (req, res) => {
+            let errors = validationResult (req);
+            if(errors.isEmpty()){
+// validar errores 
+            }else {
+                return res.render('login', {errors: errors.errors});
+            }
+        }
 };
 
 module.exports = userController;
