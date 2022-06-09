@@ -10,7 +10,7 @@ body {
 
 header {
   position: fixed;
-  background-color: rgb(87, 87, 226);
+  background-color: rgb(32, 32, 239);
   width: 100%;
   top: 0px;
   
@@ -32,16 +32,31 @@ a:hover{
      padding-right: 10vw;
      padding-top: 1vw;
      padding-bottom: 1vw;
-     color: aliceblue;
+     color: rgb(65, 104, 139);
   }
-
+#logotipo-main{
+  background-image: url(../img/firma-logo.png);
+  background-position: center center;
+  background-attachment:inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  width: 100px;
+  height: 60px;
+}
 .enlaces {
+  list-style:none;
     display:flex;
     justify-content: space-around;
     flex-grow: 1;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
   }
-
+.enlaces a{
+text-decoration: none;
+color:rgb(255, 255, 255);
+padding-left: 3vw;
+padding-right: 3vw;
+}
   .space-nav{
   
     padding-top: 0px;
@@ -51,7 +66,7 @@ a:hover{
   }
 
   #home{
-    background-image: url(../img/fondo1.jpeg);
+    background-image: url(../img/planeta-fondo.jpeg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -65,6 +80,7 @@ a:hover{
     padding-top: 5rem;
     padding-right: 3rem;
     padding-left: 45rem;
+    padding-bottom: 5rem;
   }
 
   .contenido{
@@ -116,7 +132,7 @@ a:hover{
     justify-content: center;
   }
 #about{
-  background-color: rgb(98, 101, 248);
+  background: linear-gradient(to right, rgba(24, 24, 197, 0.905), rgb(6, 20, 52))
 }
   .in-contenido-about{
 
@@ -124,7 +140,7 @@ a:hover{
     max-width: 50%;
     padding: 1rem;
     margin: 1rem;
-
+color: rgb(235, 218, 32);
   }
 
   .in-contenido-services{
@@ -158,9 +174,8 @@ background-color: aqua;
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
-  width: 430px;
-  height: 608px;
-
+    width: 430px;
+    height: 608px;
   }
  
 
@@ -171,7 +186,6 @@ background-color: aqua;
     max-width: 31%;
     padding: 1rem;
     margin: 1rem;
-
   }
 
   .in-contenido-contact{
@@ -218,14 +232,14 @@ background-color: aqua;
   }
 
   #logo-footer{
-    background-image: url(../img/perfil.jpg);
+    background-image: url(../img/redondo-logo.png);
     background-position: center center;
     background-attachment:inherit;
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
   }
   section{
     width: 100%;
