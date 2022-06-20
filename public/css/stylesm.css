@@ -11,10 +11,23 @@ body {
 
 header {
   position: fixed;
-  background-color: rgb(3, 0, 27);
+  background-color: rgb(143, 120, 58);
   width: 100%;
   top: 0px;
 
+}
+
+.button {
+  background-color: #61b4ce;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 29px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 a {
@@ -23,7 +36,8 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: rgb(42, 124, 218);
+  font-size: 1.7rem;
 }
 
 .nav-bar {
@@ -148,58 +162,87 @@ h1 {
   border-color: rgb(66, 66, 121);
   min-width: 30%;
   max-width: 31%;
-  padding: 1rem;
   margin: 1rem;
-
+  text-align: center;
 }
 
-#patentes {
-  background-image: url(../img/circle-s.jpg);
-  background-position: center center;
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
+.service-content{
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  height: 350px;
+  min-width: 30%;
+  max-width: 31%;  
+  margin: 1rem;
+}
+.name-service{
+  text-align: center;
+   height: 50%;
 }
 
-#marcas {
-  background-image: url(../img/trademark-s.jpg);
-  background-position: center center;
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-}
 
-#modelos {
-  background-image: url(../img/foco-verde-s.jpg);
-  background-position: center center;
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-}
 
-#designs {
-  background-image: url(../img/auto-s.jpg);
-  background-position: center center;
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-}
+.i-patente{
+    background-image: url(../img/circle-s.jpg);
+    background-position: center center;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    
+  }
 
-#regulatorios {
-  background-image: url(../img/regulatorio-s.jpg);
-  background-position: center center;
-  background-attachment: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: aliceblue;
-}
+  .i-marca{
+    background-image: url(../img/trademark-s.jpg);
+    background-position: center center;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    width: 100%;
+    height: 65%;
+    
+  }
+
+  .i-model{
+    background-image: url(../img/foco-verde-s.jpg);
+    background-position: center center;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    width: 100%;
+    height: 65%;
+    
+  }
+
+  .i-design{
+    background-image: url(../img/auto-s.jpg);
+    background-position: center center;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    width: 100%;
+    height: 65%;
+  }
+
+  .i-regulo{
+
+    background-image: url(../img/regulatorio-s.jpg);
+    background-position: center center;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    width: 100%;
+    height: 65%;
+  }
 
 .services {
-  color: rgb(255, 255, 255)
+  color: rgb(243, 243, 243)
 }
 
 #international {
@@ -313,29 +356,54 @@ section {
 
   header {
 
-    height: 110px;
+    height: 120px;
+    
   }
 
   #logotipo-main {
     margin-top: 15px;
+    width: 140px;
+    height: 80px;
+    margin-bottom: 15px;
   }
 
   #enlaces {
     margin-top: 15px;
   }
 
+  .enlaces a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 22px;
+  }
+
+  .nav-bar{
+    padding-bottom: 1.8vw;
+
+  }
+
   #home {
 
-    height: 800px;
+    height: 850px;
   }
+
+h1{
+  font-size: 3rem;
+
+}
 
   .portada {
     text-align: left;
-    padding-top: 12rem;
-    padding-right: 40rem;
-    padding-left: 1rem;
+    padding-top: 15rem;
+    padding-right: 45%;
+    padding-left: 3rem;
     padding-bottom: 2rem;
   }
+  .boton{
+  margin-top: 20px;
+}
 
   h2 {
     font-size: 2.5rem;
@@ -349,14 +417,26 @@ section {
     width: 100%;
     min-height: 450px;
   }
-
+  p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    
+  }
   .contenido {
     justify-content: center;
   }
 
+  .in-contenido-about {
+
+    min-width: 70%;
+    max-width: 71%;
+    margin: 2rem;
+    
+  }
+
   #about-image {
-    min-width: 98%;
-    min-height: 200px;
+    min-width: 95%;
+    min-height: 600px;
     margin-bottom: 10px;
   }
 
@@ -368,8 +448,8 @@ section {
     border: 2px solid;
     border-color: rgb(196, 175, 10);
     background-color: #dce5ec;
-    min-width: 97%;
-    max-width: 98%;
+    min-width: 30%;
+    max-width: 31%;
     padding: 1rem;
     margin: 1rem;
   }
@@ -381,10 +461,17 @@ section {
   }
 
   .in-contenido-contact {
-    min-width: 79%;
-    max-width: 80%;
+    min-width: 15%;
+    max-width: 17%;
     padding: 1rem;
     margin: 1rem;
+
+  }
+
+ 
+
+  .maps{
+    height: 500px;
 
   }
 
@@ -393,12 +480,19 @@ section {
     color: rgb(196, 178, 44);
     font-size: 1.8rem;
     line-height: 25px;
+   
   }
 
   a.gold-icon {
     color: rgb(196, 178, 44);
     font-size: 3rem;
+   
+  }
 
+  a.gold-icon:hover {
+    color: rgb(42, 124, 218);
+    font-size: 3.4rem;
+   
   }
 
   p.footer {
@@ -468,6 +562,12 @@ section {
     min-height: 450px;
   }
 
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    
+  }
+
   .contenido {
     justify-content: center;
   }
@@ -494,6 +594,12 @@ section {
     min-width: 97%;
     max-width: 98%;
     padding: 1rem;
+    margin: 1rem;
+  }
+
+  .service-content{
+    min-width: 70%;
+    max-width: 71%;  
     margin: 1rem;
   }
 
@@ -615,7 +721,11 @@ section {
     padding: 1rem;
     margin: 1rem;
   }
-
+  .service-content{
+    min-width: 80%;
+    max-width: 81%;  
+    margin: 1rem;
+  }
   #international {}
 
   #contact {
@@ -738,6 +848,12 @@ section {
     margin: 1rem;
   }
 
+  .service-content{
+    min-width: 80%;
+    max-width: 81%;  
+    margin: 1rem;
+  }
+
   #international {}
 
   #contact {
@@ -761,7 +877,7 @@ section {
 
   a.gold-icon {
     color: rgb(196, 178, 44);
-    font-size: 3rem;
+    font-size: 4rem;
 
   }
 
